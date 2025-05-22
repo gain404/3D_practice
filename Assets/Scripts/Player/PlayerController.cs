@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         Ray ray = new Ray (transform.position, Vector3.down);
 
-        if (Physics.Raycast(ray, 1f, groundLayerMask))
+        if (Physics.Raycast(ray, 2f, groundLayerMask))
             return true;
 
         return false;

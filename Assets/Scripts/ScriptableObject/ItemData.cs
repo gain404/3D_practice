@@ -13,9 +13,10 @@ public enum ItemType
 [CreateAssetMenu]
 public class ItemData : ScriptableObject
 {
-    [Header("Item properties")]
+    [Header("Item Info")]
     public ItemType Type;
     public Sprite ItemIcon;
+    public GameObject Prefabs;
 
     public string Name;
     public string Description;
