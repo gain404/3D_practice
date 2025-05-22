@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Start()
+    {
+        LockCursor();
+    }
+
     private void FixedUpdate()
     {
         Move();
@@ -111,9 +116,16 @@ public class PlayerController : MonoBehaviour
     {
         Ray ray = new Ray (transform.position, Vector3.down);
 
-        if (Physics.Raycast(ray, 0.1f, groundLayerMask))
+        if (Physics.Raycast(ray, 1f, groundLayerMask))
             return true;
 
         return false;
     }
+
+    public void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
 }
