@@ -73,3 +73,19 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ——————————————————
+# Unity 자동 생성 라이트맵/라이팅 데이터
+# Assets 폴더 하위에 LightingData.asset 파일이 자동 생성되어 커밋될 수 있음
+**/LightingData.asset
+**/LightingData.*   # .lighting, .lightingdata 등 확장자도 무시
+
+# Generated/Auto-Generated code
+# (예: Addressables, Scriptable Build Pipeline 등에서 뽑아내는 코드)
+**/Generated/**
+
+# ——————————————————
+# 운영체제 쓰레기 파일
+.DS_Store
+Thumbs.db
+
