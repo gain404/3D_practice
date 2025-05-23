@@ -1,5 +1,6 @@
 # 3D_practice
-**내일배움캠프 과제**
+**내일배움캠프 과제**  
+![image](https://github.com/user-attachments/assets/b45cffd5-cb23-454e-b434-82f94b0331b5)  
 
 w,a,s,d를 이용해 이동합니다.   
 스페이스 바를 눌러 점프합니다.   
